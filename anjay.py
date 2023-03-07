@@ -54,5 +54,5 @@ def run2():
     print('''Server Got Attacked By ImSon: {ip} | Port : {port} | Method : {choice}''')
 
 
-th = threading.Thread(run2, **('target',))
+th = threading.Thread(run2,('target',))
 th.start()
