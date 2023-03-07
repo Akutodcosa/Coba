@@ -56,7 +56,7 @@ def run2():
 
 for y in range(threads):
     if choice == 'UDP':
-        th = threading.Thread(target = UDP)
+        th = threading.Thread(target = udp)
         th.start()
     elif choice == 'TCP':
         th = threading.Thread(target = tcp)
